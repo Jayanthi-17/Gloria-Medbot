@@ -147,3 +147,45 @@ button {
     width: 75%;
     transition: margin-left 0.3s ease-in-out;
 }
+@media (max-width: 768px) {
+    .history-bar {
+        display: none; /* Hide history bar on small screens */
+    }
+
+    .chat-container {
+        width:95%;
+        margin-left: 0;
+        max-width: none;
+    }
+
+    .chat-box {
+        height: 400px;
+    }
+
+    .input-area {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        width: 100%;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chat-box {
+        height: 350px;
+    }
+
+    .input-area {
+        flex-direction: row;
+    }
+}
