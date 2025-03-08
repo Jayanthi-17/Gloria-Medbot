@@ -89,3 +89,61 @@ button {
     background-color: #ccc;
     color: black;
 }
+/* Header Styling */
+#head {
+    width: 100%;
+    text-align: center;
+    background-color: #98c3f2;
+    color: rgb(5, 5, 5);
+    padding: 15px 0;
+    font-size: 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* History Bar (Always Visible) */
+.history-bar {
+    width: 20%;
+    background-color: #a5ccf0;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    height: calc(100vh - 60px); /* Adjusted height below header */
+    position: fixed;
+    left: 0;
+    top: 80px; /* Below header */
+}
+
+/* History List */
+.history-bar h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#history-list {
+    list-style: none;
+    padding: 0;
+}
+
+#history-list li {
+    background: #90acd6;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#history-list li:hover {
+    background: #bbb;
+}
+
+/* Chat Container (Shifted Right to Accommodate History) */
+.chat-container {
+    margin-top: 70px; /* Prevent overlap with header */
+    margin-left: 22%; /* Shift to the right since history bar is visible */
+    width: 75%;
+    transition: margin-left 0.3s ease-in-out;
+}
